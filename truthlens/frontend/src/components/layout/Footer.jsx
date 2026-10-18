@@ -33,9 +33,9 @@ export default function Footer() {
           <div>
             <h4 style={{ color: 'var(--muted)', marginBottom: '16px' }}>NAVIGATE</h4>
             <div className="flex flex-col gap-3">
-              <NavLink to="/" className="hover:text-[var(--green)] transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[⚡] ANALYZE</NavLink>
-              <NavLink to="/history" className="hover:text-[var(--text)] transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[🕰] HISTORY</NavLink>
-              <NavLink to="/about" className="hover:text-[var(--text)] transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[ℹ] ABOUT</NavLink>
+              <NavLink to="/" className="hover:text-(--green) transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[⚡] ANALYZE</NavLink>
+              <NavLink to="/history" className="hover:text-(--text) transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[🕰] HISTORY</NavLink>
+              <NavLink to="/about" className="hover:text-(--text) transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>[ℹ] ABOUT</NavLink>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 import os
 import asyncio
 import httpx
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 from utils.logger import logger
 
 async def search_claim_serper(client: httpx.AsyncClient, claim: str, api_key: str) -> dict:
@@ -59,7 +59,7 @@ async def search_claims(key_claims: list) -> dict:
                 else:
                     results.append(result)
     else:
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         tasks = [loop.run_in_executor(None, search_claim_ddg, claim) for claim in claims_to_search]
         raw_results = await asyncio.gather(*tasks, return_exceptions=True)
         for i, result in enumerate(raw_results):

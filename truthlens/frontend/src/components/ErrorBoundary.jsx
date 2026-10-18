@@ -31,7 +31,7 @@ export default class ErrorBoundary extends Component {
             
             {this.state.error?.message && (
               <div className="bg-bg-deep p-3 rounded-lg w-full overflow-hidden text-left mb-4">
-                <code className="font-mono text-xs text-accent-red/80 break-words">
+                <code className="font-mono text-xs text-accent-red/80 wrap-break-word">
                   {this.state.error.message.length > 100 
                     ? this.state.error.message.slice(0, 100) + "..." 
                     : this.state.error.message}

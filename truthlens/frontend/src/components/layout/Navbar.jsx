@@ -59,7 +59,7 @@ export default function Navbar() {
                 color: isActive ? 'var(--text)' : 'var(--muted)',
                 textDecoration: isActive ? 'underline' : 'none'
               })}
-              className="hover:text-[var(--text)] transition-colors"
+              className="hover:text-(--text) transition-colors"
             >
               Home
             </NavLink>
@@ -73,7 +73,7 @@ export default function Navbar() {
                 color: isActive ? 'var(--text)' : 'var(--muted)',
                 textDecoration: isActive ? 'underline' : 'none'
               })}
-              className="hover:text-[var(--text)] transition-colors"
+              className="hover:text-(--text) transition-colors"
             >
               About
             </NavLink>
@@ -87,7 +87,7 @@ export default function Navbar() {
                 color: isActive ? 'var(--text)' : 'var(--muted)',
                 textDecoration: isActive ? 'underline' : 'none'
               })}
-              className="hover:text-[var(--text)] transition-colors"
+              className="hover:text-(--text) transition-colors"
             >
               History
             </NavLink>
@@ -134,7 +134,7 @@ export default function Navbar() {
                 borderBottom: '1px solid var(--border)',
                 textDecoration: 'none'
               }}
-              className="hover:text-[var(--text)]"
+              className="hover:text-(--text)"
               onClick={() => setMenuOpen(false)}
             >
               Home
@@ -151,7 +151,7 @@ export default function Navbar() {
                 borderBottom: '1px solid var(--border)',
                 textDecoration: 'none'
               }}
-              className="hover:text-[var(--text)]"
+              className="hover:text-(--text)"
               onClick={() => setMenuOpen(false)}
             >
               About
@@ -168,7 +168,7 @@ export default function Navbar() {
                 borderBottom: '1px solid var(--border)',
                 textDecoration: 'none'
               }}
-              className="hover:text-[var(--text)]"
+              className="hover:text-(--text)"
               onClick={() => setMenuOpen(false)}
             >
               History

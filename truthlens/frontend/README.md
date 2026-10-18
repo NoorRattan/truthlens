@@ -14,7 +14,7 @@ The modern, editorial-style analysis interface for the TruthLens misinformation 
 - **Backend API**: [https://truthlens-api-4vou.onrender.com](https://truthlens-api-4vou.onrender.com)
 
 ## Prerequisites
-- Node.js 18+
+- Node.js 24 LTS
 - npm
 
 ## Development Setup

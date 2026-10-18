@@ -61,32 +61,32 @@ export default function AboutPage() {
   const verdicts = [
     {
       name: 'Likely Real',
-      color: 'text-[var(--green)]',
-      border: 'border-[var(--green)]',
+      color: 'text-(--green)',
+      border: 'border-(--green)',
       desc: 'Content is factual with credible sources.',
     },
     {
       name: 'Likely Fake',
-      color: 'text-[var(--red)]',
-      border: 'border-[var(--red)]',
+      color: 'text-(--red)',
+      border: 'border-(--red)',
       desc: 'Demonstrably false, fabricated, or deceptive.',
     },
     {
       name: 'Misleading',
-      color: 'text-[var(--amber)]',
-      border: 'border-[var(--amber)]',
+      color: 'text-(--amber)',
+      border: 'border-(--amber)',
       desc: 'Contains factual elements but strips context.',
     },
     {
       name: 'Mixed',
-      color: 'text-[var(--yellow)]',
-      border: 'border-[var(--yellow)]',
+      color: 'text-(--yellow)',
+      border: 'border-(--yellow)',
       desc: 'Combines true claims with falsehoods.',
     },
     {
       name: 'Unverifiable',
-      color: 'text-[var(--gray)]',
-      border: 'border-[var(--gray)]',
+      color: 'text-(--gray)',
+      border: 'border-(--gray)',
       desc: 'Lacks enough evidence to make a conclusion.',
     },
   ];
@@ -221,7 +221,7 @@ export default function AboutPage() {
               <h3 className="font-bebas text-2xl text-text tracking-wide uppercase">
                 {card.title}
               </h3>
-              <p className="font-mono text-sm text-muted leading-relaxed flex-grow">
+              <p className="font-mono text-sm text-muted leading-relaxed grow">
                 {card.body}
               </p>
               <div className="editorial-tag self-start mt-2">{card.tagLabel}</div>

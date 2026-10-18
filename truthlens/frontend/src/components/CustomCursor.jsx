@@ -95,12 +95,12 @@ export default function CustomCursor() {
     <>
       <div 
         ref={cursorDotOutline}
-        className="fixed top-0 left-0 w-9 h-9 border-[1.5px] border-accent-purple/50 rounded-full pointer-events-none z-[9999] transition-transform duration-75 origin-center"
+        className="fixed top-0 left-0 w-9 h-9 border-[1.5px] border-accent-purple/50 rounded-full pointer-events-none z-9999 transition-transform duration-75 origin-center"
         style={{ transform: `translate(-50%, -50%) scale(1)` }}
       />
       <div 
         ref={cursorDot}
-        className="fixed top-0 left-0 w-2 h-2 bg-accent-purple rounded-full pointer-events-none z-[9999] transition-transform duration-75 origin-center"
+        className="fixed top-0 left-0 w-2 h-2 bg-accent-purple rounded-full pointer-events-none z-9999 transition-transform duration-75 origin-center"
         style={{ transform: `translate(-50%, -50%) scale(1)` }}
       />
     </>

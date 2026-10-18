@@ -47,7 +47,7 @@ export default function HealthCheck() {
       <button 
         onClick={checkStatus}
         disabled={checking}
-        className="font-dm text-xs text-accent-amber border border-accent-amber/30 px-3 py-1 rounded bg-transparent hover:bg-accent-amber/10 transition-colors disabled:opacity-50"
+        className="font-dm text-xs text-accent-amber border border-accent-amber/30 px-3 py-1 rounded-sm bg-transparent hover:bg-accent-amber/10 transition-colors disabled:opacity-50"
       >
         {checking ? 'Checking...' : 'Retry'}
       </button>

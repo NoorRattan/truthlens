@@ -7,11 +7,11 @@ export default function SourcesCard({ cited_sources }) {
 
   const getRatingBadge = (rating) => {
     switch (rating) {
-      case "Highly Credible": return "text-[var(--green)] border-[var(--green)]";
+      case "Highly Credible": return "text-(--green) border-(--green)";
       case "Generally Credible": return "text-text border-text";
-      case "Mixed": return "text-[var(--amber)] border-[var(--amber)]";
-      case "Questionable": return "text-[var(--red)] border-[var(--red)]";
-      case "Known Misinformation": return "text-bg bg-[var(--red)] border-[var(--red)]";
+      case "Mixed": return "text-(--amber) border-(--amber)";
+      case "Questionable": return "text-(--red) border-(--red)";
+      case "Known Misinformation": return "text-bg bg-(--red) border-(--red)";
       default: return "text-muted border-muted";
     }
   };

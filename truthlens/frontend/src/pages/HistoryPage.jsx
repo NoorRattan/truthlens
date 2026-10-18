@@ -133,7 +133,7 @@ export default function HistoryPage() {
                       exit={{ opacity: 0 }}
                       disabled={clearingHistory}
                       onClick={() => setConfirmClear(true)}
-                      className="editorial-btn text-xs text-[var(--red)] border-[var(--red)] hover:bg-[var(--red)] hover:text-bg flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="editorial-btn text-xs text-(--red) border-(--red) hover:bg-(--red) hover:text-bg flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       <Trash2 size={12} /> CLEAR ALL
                     </motion.button>
@@ -143,17 +143,17 @@ export default function HistoryPage() {
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, scale: 0.9 }}
-                      className="flex items-center gap-2 border border-[var(--red)] bg-surface px-3 py-1.5"
+                      className="flex items-center gap-2 border border-(--red) bg-surface px-3 py-1.5"
                     >
-                      <span className="font-mono text-[10px] text-[var(--red)] mr-2 uppercase">Are you sure?</span>
+                      <span className="font-mono text-[10px] text-(--red) mr-2 uppercase">Are you sure?</span>
                       <button
                         onClick={handleClearConfirm}
                         disabled={clearingHistory}
-                        className="font-mono font-bold text-[10px] text-[var(--red)] px-2 hover:underline uppercase disabled:opacity-50 disabled:no-underline"
+                        className="font-mono font-bold text-[10px] text-(--red) px-2 hover:underline uppercase disabled:opacity-50 disabled:no-underline"
                       >
                         {clearingHistory ? 'CLEARING...' : 'YES, CLEAR'}
                       </button>
-                      <span className="text-[var(--red)]/30">|</span>
+                      <span className="text-(--red)/30">|</span>
                       <button
                         onClick={() => setConfirmClear(false)}
                         disabled={clearingHistory}
@@ -200,7 +200,7 @@ export default function HistoryPage() {
                     <h3 className="font-bebas text-xl text-text tracking-wide uppercase">
                       {groupName}
                     </h3>
-                    <div className="flex-grow h-[1px] bg-border" />
+                    <div className="grow h-px bg-border" />
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {groupedHistory[groupName].map((item, itemIdx) => (
