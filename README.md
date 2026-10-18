@@ -20,7 +20,7 @@ This repository is organized into the following components:
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up your `.env` file with the required API keys (GitHub/Gemini).
+3. Copy `.env.example` to `.env` and configure Groq (primary), Cohere (fallback), and Serper (web search) as needed.
 4. Run the server:
    ```bash
    uvicorn main:app --reload
@@ -45,5 +45,17 @@ This repository is organized into the following components:
 - **Frontend**: [https://truthlens-omega.vercel.app](https://truthlens-omega.vercel.app)
 - **Backend API**: [https://truthlens-api-4vou.onrender.com](https://truthlens-api-4vou.onrender.com)
 
+### Render configuration
+
+Use `truthlens/backend` as the service root directory, `pip install -r requirements.txt`
+as the build command, and `uvicorn main:app --host 0.0.0.0 --port $PORT` as the start
+command. Set the health check path to `/api/health`. The Blueprint is at
+`truthlens/render.yaml`; its paths are relative to the repository root.
+
+The backend requires the `html-clean` extra for lxml. It supplies the HTML cleaner
+used by article extraction; omitting it causes the application import to fail
+before a port is opened. CI exercises application startup and the health endpoint
+in addition to pipeline tests.
+
 ## Repository
-- **Current Home**: [https://github.com/calmcode47/Fake-news-Detector.git](https://github.com/calmcode47/Fake-news-Detector.git)
+- **Current Home**: [NoorRattan/truthlens](https://github.com/NoorRattan/truthlens)

@@ -4,7 +4,7 @@ services:
     env: python
     region: oregon
     plan: free
-    rootDir: backend
+    rootDir: truthlens/backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /api/health
@@ -19,7 +19,7 @@ services:
       - key: ALLOWED_ORIGINS
         sync: false
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: 3.12.15
 
 # -------------------------------------------------------------------------
 # MANUAL CONFIGURATION REQUIRED AFTER CONNECTING REPOSITORY TO RENDER
